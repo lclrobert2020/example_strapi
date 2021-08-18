@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "application_types",
+  "info": {
+    "name": "Application_Type",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "private": false,
+      "required": true,
+      "unique": true
+    },
+    "Description": {
+      "type": "text"
+    },
+    "admin_users": {
+      "plugin": "admin",
+      "collection": "user"
+    }
+  }
+}

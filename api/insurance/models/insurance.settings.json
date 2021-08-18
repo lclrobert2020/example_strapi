@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "insurances",
+  "info": {
+    "name": "Insurance"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "Cover_Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "collection": "user"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "isPulished": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "should_be_hidden_from_mains",
+  "info": {
+    "name": "Should be hidden from Main"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

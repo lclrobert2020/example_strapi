@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "feature_projects",
+  "info": {
+    "name": "Feature Project",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "project_public": {
+      "type": "component",
+      "repeatable": true,
+      "component": "banner.banner-to-project"
+    }
+  }
+}

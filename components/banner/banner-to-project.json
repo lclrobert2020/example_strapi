@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_banner_banner_to_project_s",
+  "info": {
+    "name": "Project_public",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "insurance": {
+      "model": "insurance"
+    }
+  }
+}
